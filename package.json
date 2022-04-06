@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Common utility types and function for TS/JS usage",
   "main": "lib/index.js",
-  "types": "lib/types/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*.js",
     "lib/**/*.d.ts",
