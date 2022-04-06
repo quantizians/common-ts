@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "__tests__/**/*.ts"],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "UMD",
+    "target": "ES6",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node", "jest"],
+    "incremental": true,
+    "declaration": true,
+    "declarationDir": "lib/types",
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "paths": {
+      "$src/*": ["src/*"]
+    },
+    "plugins": [
+      // Transform paths in output .js files
+      { "transform": "typescript-transform-paths" },
+
+      // Transform paths in output .d.ts files (Include this line if you output declarations files)
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ]
+  }
+}
