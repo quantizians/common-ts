@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/quantizians/common-ts/compare/v1.0.1...v1.0.2) (2022-04-14)
+
+
+### Bug Fixes
+
+* **utils.debounce:** remove (flawed implementation), should use lodash's instead ([bd432a3](https://github.com/quantizians/common-ts/commit/bd432a30218776da771bc379ddc579020f49356c))
+
 ## [1.0.1](https://github.com/quantizians/common-ts/compare/v1.0.0...v1.0.1) (2022-04-06)
 
 
