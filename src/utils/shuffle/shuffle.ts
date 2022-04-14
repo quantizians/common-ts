@@ -1,5 +1,5 @@
 /**
- * Randomly shuffle an array
+ * Randomly shuffle an array usin gFisher-Yates (aka Knuth) algorithm.
  * https://stackoverflow.com/a/2450976/1293256
  * @param  {Array} array The array to shuffle
  * @return {Array} A shuffled copy of original array

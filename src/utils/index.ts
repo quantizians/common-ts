@@ -1,3 +1,3 @@
-export * from './deepmerge';
-export * from './debounce';
-export * from './shuffle';
+export { casify } from './casify';
+export { deepmerge } from './deepmerge';
+export { shuffle } from './shuffle';
