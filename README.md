@@ -12,6 +12,78 @@ Common typescript utility types and functions
 
 </div>
 
+## Table of Contents
+
+<details open>
+  <summary>Show / hide</summary>
+
+- [@quantiz/common](#quantizcommon)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Documentation](#documentation)
+  - [Contributing](#contributing)
+
+</details>
+
+## Installation
+
+```bash
+npm install -D @quantiz/common
+yarn add -D @quantiz/common
+pnpm install -D @quantiz/common
+```
+
+## Usage
+
+<details open>
+  <summary>How to import: show / hide</summary>
+
+```typescript
+// import types
+import type {
+  RecursivePartial,
+  Merge,
+  DeepObject
+} from '@quantiz/common';
+
+// all importable units are exposed in root
+
+import { casify } from '@quantiz/common';
+
+// you can also import from subdirectory for better code splitting
+import { casify } from '@quantiz/common/utils';
+import { casify } from '@quantiz/common/utils/casify';
+```
+
+</details>
+
+## Documentation
+
+...placeholder for now...
+
+## Contributing
+
+[Read Contribution Guide][contributing]
+
+<br />
+<div align="center">
+
+<!-- [![tweet]][tweet.url] -->
+
+</div>
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/vnphanquang" target="_blank">
+    <img
+      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+      height="60"
+      width="217"
+      alt="buy vnphanquang a coffee"
+    />
+  </a>
+</p>
+
 [codecov.badge]: https://codecov.io/github/quantizians/common-ts/coverage.svg?branch=main
 [codecov]: https://codecov.io/github/quantizians/common-ts?branch=main
 
