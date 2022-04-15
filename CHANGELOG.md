@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/quantizians/common-ts/compare/v1.0.2...v1.1.0) (2022-04-15)
+
+
+### Features
+
+* **utils.casify:** better options and support for kebab & snake ([71c6096](https://github.com/quantizians/common-ts/commit/71c609619996a6e10d20bc2217d36509e4dd3612))
+* **utils.slugify:** implementation ([3c3b2f5](https://github.com/quantizians/common-ts/commit/3c3b2f53665e0739317f1603ca0be9f3400aa525))
+
 ## [1.0.2](https://github.com/quantizians/common-ts/compare/v1.0.1...v1.0.2) (2022-04-14)
 
 
