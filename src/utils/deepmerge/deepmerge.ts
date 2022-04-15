@@ -23,10 +23,15 @@ const isObject = (obj: any) => {
   return false;
 };
 
-export const deepmerge = <T extends IObject[]>(
+/**
+ * Deep merge objects
+ * @param {...Object} objects - objects to merge
+ * @returns {Object} merged object
+ */
+export function deepmerge<T extends IObject[]>(
   ...objects: T
-): TUnionToIntersection<T[number]> =>
-  objects.reduce((result, current) => {
+): TUnionToIntersection<T[number]> {
+  return objects.reduce((result, current) => {
     Object.keys(current).forEach((key) => {
       if (Array.isArray(result[key]) && Array.isArray(current[key])) {
         result[key] = Array.from(new Set(result[key].concat(current[key])));
@@ -39,3 +44,4 @@ export const deepmerge = <T extends IObject[]>(
 
     return result;
   }, {}) as any;
+}
