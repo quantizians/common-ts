@@ -11,7 +11,7 @@ test('leading & trailing hyphen (\'-\') should be trimmed', () => {
   expect(slugify('---foo-bar---')).toBe('foo-bar');
 });
 
-test('non-alphanumberic character should be replaced by hyphen', () => {
+test('non-alphanumeric character should be replaced by hyphen', () => {
   expect(
     slugify('A decorated & complex "foo, bar" title!?')
   ).toBe('a-decorated-complex-foo-bar-title');
