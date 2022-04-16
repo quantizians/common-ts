@@ -1,5 +1,9 @@
 /**
- * @param text text to slugify
+ * Slugify a string
+ *
+ * @public
+ *
+ * @param text - text to slugify
  * @returns slugified text
  */
 export function slugify(text: string): string {

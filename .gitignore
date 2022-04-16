@@ -68,3 +68,5 @@ lib/
 # tsc cache
 .tsbuildinfo
 tsconfig.build.tsbuildinfo
+
+temp/
