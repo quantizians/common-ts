@@ -65,7 +65,7 @@ import { casify } from '@quantiz/common/utils/casify';
 
 ## Documentation
 
-...placeholder for now...
+See [Documentation Page][api.docs]
 
 ## Contributing
 
@@ -112,6 +112,7 @@ import { casify } from '@quantiz/common/utils/casify';
 
 [contributing]: ./CONTRIBUTING.md
 [changelog]: ./CHANGELOG.md
+[api.docs]: ./api/docs/index.md
 
 [tweet]: https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2quantizians%2Fcommon-ts
 [tweet.url]: https://twitter.com/intent/tweet?text=%40quantiz%2Fcommon%20-%20Common%20typescript%20utility%20types%20and%20functions%0A%0Ahttps%3A%2F%2Fgithub.com%2Fquantizians%2Fcommon-ts
