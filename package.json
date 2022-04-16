@@ -1,6 +1,6 @@
 {
   "name": "@quantiz/common",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Common utility types and functions for TS/JS usage",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
