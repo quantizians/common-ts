@@ -1,3 +1,6 @@
+/**
+ * @public
+ */
 export type CasifyConfig = {
   casing: 'camel' | 'snake' | 'kebab';
   /** characters to ignore */
@@ -7,9 +10,11 @@ export type CasifyConfig = {
 };
 
 /**
+ * @public
+ *
  * Transform casing of a string, for example from kebab-case to camelCase
- * @param str {string} string from which casing will be transformed
- * @param casing {string} string currently only 'camel' is supported
+ * @param str - string from which casing will be transformed
+ * @param casing - string currently only 'camel' is supported
  */
 export function casify(str: string, config: Partial<CasifyConfig> = {}) {
   const mergedConfig: CasifyConfig = {

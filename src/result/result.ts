@@ -1,6 +1,8 @@
+/** @public */
 export type Ok<Value> = { value:Value; __ok: true; unwrap: () => Value; };
 /**
  * Construct an Ok
+ * @public
  */
 export function ok<Value>(value: Value): Ok<Value> {
   return {
@@ -13,14 +15,19 @@ export function ok<Value>(value: Value): Ok<Value> {
 }
 /**
  * Check if a Result is of variant Ok
+ * @public
  */
 export function isOk<Value, Error>(result: Result<Error, Value>): result is Ok<Value> {
   return result.__ok === true;
 }
 
+/**
+ * @public
+ */
 export type Err<Error> = { err: Error; __ok: false; unwrap: () => never; };
 /**
  * Construct an Err
+ * @public
  */
 export function err<Error>(err: Error): Err<Error> {
   return {
@@ -33,6 +40,7 @@ export function err<Error>(err: Error): Err<Error> {
 }
 /**
  * Check if a Result is of variant Err
+ * @public
  */
 export function isErr<Value, Error>(
   result: Result<Error, Value>
@@ -41,6 +49,9 @@ export function isErr<Value, Error>(
 }
 
 /**
+ * @public
+ *
+ * @example
  * Example Usage:
  *
  * ```typescript

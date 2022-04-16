@@ -1,9 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-interface IObject {
+/**
+ * @public
+ */
+export interface DeepMergeInput {
   [key: string]: any;
 }
 
-type TUnionToIntersection<U> = (
+/**
+ * @public
+ */
+export type DeepMergeOutput<U> = (
   U extends any ? (k: U) => void : never
 ) extends (k: infer I) => void
   ? I
@@ -24,13 +30,15 @@ const isObject = (obj: any) => {
 };
 
 /**
+ * @public
+ *
  * Deep merge objects
- * @param {...Object} objects - objects to merge
- * @returns {Object} merged object
+ * @param objects - objects to merge
+ * @returns merged object
  */
-export function deepmerge<T extends IObject[]>(
+export function deepmerge<T extends DeepMergeInput[]>(
   ...objects: T
-): TUnionToIntersection<T[number]> {
+): DeepMergeOutput<T[number]> {
   return objects.reduce((result, current) => {
     Object.keys(current).forEach((key) => {
       if (Array.isArray(result[key]) && Array.isArray(current[key])) {
